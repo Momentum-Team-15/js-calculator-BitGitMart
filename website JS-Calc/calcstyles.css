@@ -1,0 +1,47 @@
+.button {
+    border: solid 1px silver;
+    height: 150px;
+    width: 150px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.number {
+    background-color: #58B952;
+    color: white; 
+    font-family: sans-serif; 
+    font-size: 40px;
+}
+
+.operator {
+    background-color: #82c17e;
+    color: black; 
+    font-family: sans-serif; 
+    font-size: 35px;
+}
+
+.teal {
+    background-color: teal; 
+}
+
+.row {
+    display: flex;
+}
+
+#square--empty {
+    width: 454px;
+    height: 150px;
+    background-color: #58B952
+
+}
+
+#picture-frame {
+    display: flex;
+}
+
+#picture-frame {
+    border: solid 2px black; 
+    height: 300px;
+    width: 300px;
+}
