@@ -21,10 +21,6 @@
     font-size: 35px;
 }
 
-.teal {
-    background-color: teal; 
-}
-
 .row {
     display: flex;
 }
@@ -36,7 +32,7 @@
 
 }
 
-#picture-frame {
+#calculation-frame {
     display: flex;
 }
 
