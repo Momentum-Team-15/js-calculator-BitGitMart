@@ -9,11 +9,38 @@
     <title>JS Calculator Scary Project</title>
 </head>
 <body>
-
     <h1>C'mon, Give this Calculator a lil' Spin</h1>
 
+    <div class="calculator">
+        <input type="text" id="result" class="output" placeholder="0"> 
+        <div class="keys">
+            <input type="button" value="+" class="key key-op" onclick="display('+')">
+            <input type="button" value="-" class="key key-op" onclick="display('-')">
+            <input type="button" value="&times" class="key key-op" onclick="display('*')">
+            <input type="button" value="/" class="key key-op" onclick="display('/')">
+            <input type="button" value="7" class="key" onclick="display('7')">
+            <input type="button" value="8" class="key" onclick="display('8')">
+            <input type="button" value="9" class="key" onclick="display('9')">
+            <input type="button" value="4" class="key" onclick="display('4')">
+            <input type="button" value="5" class="key" onclick="display('5')">
+            <input type="button" value="6" class="key" onclick="display('6')">
+            <input type="button" value="1" class="key" onclick="display('1')">
+            <input type="button" value="2" class="key" onclick="display('2')">
+            <input type="button" value="3" class="key" onclick="display('3')">
+            <input type="button" value="1" class="key" onclick="display('0')">
+            <input type="button" value="2" class="key" onclick="display('.')">
+            <input type="button" value="C" class="key" onclick="clearScreen()">
+            <input type="button" value="=" class="key key-ent" onclick="solve()">
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+<!-- 
 <div class ="row">
-    <div class="button number" id="square--calc">C</div>
+    <div class="button clear" id="square--clear">C</div>
     <div id="answer"></div>
 </div> 
 <div class="row">
@@ -36,7 +63,7 @@
 </div>
 <div class="row">
     <div class="button number" id="square--zero">0</div>
-    <div class="button operator" id="square--period">.</div>
+    <div class="button number" id="square--period">.</div>
     <div class="button operator" id="square--equals">=</div>
     <div class="button operator" id="square--addition">+</div>
 </div>

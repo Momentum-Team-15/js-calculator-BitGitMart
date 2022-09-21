@@ -1,5 +1,34 @@
+function display(val){
+    document.getElementById('result').value += val 
+    return val 
+}
+
+function solve(){
+    let x = document.getElementById('result').value
+    let y = eval(x) 
+    document.getElementById('result').value = y
+    return y 
+}
+
+function clearScreen(){ //always remember with these functions -- the curly braces MUST be right next to the parentheses to work! 
+    document.getElementById("result").value = ""; 
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 const display = document.querySelector('#answer')
 //this is the parent element, and we want text to display by classifying it as a child element
 
@@ -8,15 +37,22 @@ let buttons = document.querySelectorAll('.button')
 for (let button of buttons)
 //so the text (let button of buttons) -- the first button is a placeholder. The second buttons is a established due to the let buttons function in line 22 
     button.addEventListener("click", (event) => {
-        console.log(event.target.innerText)
+        //console.log(event.target.innerText)
 
         let newElement = document.createElement('div')
         let text = document.createTextNode(event.target.innerText)
         newElement.appendChild(text)
         display.appendChild(newElement)
 
+        let result = document.getElementById("")
+
+
+
+
+
     }) 
 
+/* 
 const operator = ('Enter operator to perform the calculation (either +, -, * or /):'); 
 const number1=parseFloat('Enter the first number: ');
 const number2=parseFloat('Enter the second number: '); 
@@ -30,7 +66,7 @@ else if(buttons === 'C'){
 else if(buttons === operator) {
     result = number1 + number2
 }
-
+// I will try some stuff out below and see how it works: 
 
 //console.log(Math.imul(number1, number2))
 /*
